@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP DH</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section class="servicos-lista">
+            <div class="container">
+                <h1><%=titulo%></h1>
+                
+                <article>
+                    <div class="thumb"> <img src=<%= servicoId.img%> alt=""></div>
+                    <div class="info">
+                        <h2><%=servicoId.nome %></h2>
+                        <p>R$ <%=servicoId.preco %></p>
+                        <p><%=servicoId.descricao %></p>
+                        <a href="/servico/servicoid/<%= servicoId.id%>" class="btn btn-primary">agendar</a>
+                    </div>
+                </article>           
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
