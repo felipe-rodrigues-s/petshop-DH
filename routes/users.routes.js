@@ -2,14 +2,15 @@ const express = require('express');
 const router = express.Router();
 const users = require('../model/user.json')
 const fs = require('fs')
+const logDB = require('../middleware/logdb.middleware')
  
 const usuarioController = require('../controller/usuario.controller');
 const {check, validationResult, body} = require('express-validator');
 // const validator = require('../middleware/auth.middleware');
 
 
-router.post('/login',usuarioController.logado)
-router.post('/cadastro',[
+router.post('/login',logDB, usuarioController.logado)
+router.post('/cadastro',logDB,[
   check('nome')
   .isLength({min:3})
   .withMessage("Nome do usuario deve conter no minimo 3 caracteres"),

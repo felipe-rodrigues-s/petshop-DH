@@ -1,0 +1,14 @@
+Usuario entrou na url: /home/loginUsuario entrou na url: /css/style.cssUsuario entrou na url: /img/logo-white.pngUsuario entrou na url: /img/icon-black.png
+  Usuario entrou na url: /home/login
+  Usuario entrou na url: /css/style.css
+  Usuario entrou na url: /img/logo-white.png
+  Usuario entrou na url: /img/icon-black.png
+  Usuario entrou na url: /users/login
+  Usuario entrou na url: /servico/cadastro
+  Usuario entrou na url: /css/style.css
+  Usuario entrou na url: /img/logo-white.png
+  Usuario entrou na url: /img/icon-black.png
+  Usuario entrou na url: /home/login
+  Usuario entrou na url: /css/style.css
+  Usuario entrou na url: /img/logo-white.png
+  Usuario entrou na url: /img/icon-black.png

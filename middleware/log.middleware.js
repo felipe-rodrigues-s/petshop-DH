@@ -1,7 +1,8 @@
 const fs = require('fs')
 
 const log = (req, res, next)=>{
-  fs.appendFileSync('./model/log.txt', `Usuario entrou na url: ${req.url}`)
+  fs.appendFileSync('./model/registro.log.txt', `
+  Usuario entrou na url: ${req.url}`)
 
   next();
 }

@@ -21,7 +21,7 @@
             <button type="submit">Enviar</button>
         </form>
         <hr>
-        <label for="cadastro" style="">Cadastro</label>
+        <label for="cadastro">Cadastro</label>
         <form action="/users/cadastro" method="post">
             <label for="nome">Nome</label>
             <input type="nome" name="nome" id="nome" placeholder="Nome" class="erros">
@@ -29,8 +29,6 @@
             <input type="email" name="email" id="email" placeholder="E-mail" class="erros">
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha" placeholder="Senha" class="erros">
-            <label for="img">Imagen</label>
-            <input type="file" name="img" id="img">
             <button type="submit">Enviar</button>
             <% if(typeof(errors) != "undefined"){%> 
                 <% errors.forEach((error)=>{%>
