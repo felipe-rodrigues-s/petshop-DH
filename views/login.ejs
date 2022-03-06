@@ -27,10 +27,10 @@
             <input type="nome" name="nome" id="nome" placeholder="Nome" class="erros">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="E-mail" class="erros">
-          
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha" placeholder="Senha" class="erros">
-            
+            <label for="img">Imagen</label>
+            <input type="file" name="img" id="img">
             <button type="submit">Enviar</button>
             <% if(typeof(errors) != "undefined"){%> 
                 <% errors.forEach((error)=>{%>

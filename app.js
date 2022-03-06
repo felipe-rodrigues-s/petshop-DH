@@ -10,6 +10,8 @@ const petsRoutes = require('./routes/pets.routes')
 const servicoRoutes = require('./routes/servico.routes')
 const usersRoutes = require('./routes/users.routes')
 
+const logMiddleware = require('./middleware/log.middleware')
+
 
 const app = express();
 
@@ -22,6 +24,7 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }))
+app.use(logMiddleware)
 
 app.use(logger('dev'));
 app.use(express.json());
