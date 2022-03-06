@@ -7,7 +7,7 @@ const validaCadastro = (req, res, next) => {
   if(!preco || Number.isInteger(preco)){
     return res.send({message:"O preço é obrigatorio e precisa ser um número válido!"})
   };
-  if(!descricao || descricao < 10){
+  if(!descricao || descricao > 10){
     return res.send({message:"O descricao é obrigatório e precisa ter acima de 10 carateres!"})
   };
 

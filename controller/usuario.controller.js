@@ -1,15 +1,9 @@
 const usuarioController = {
-  cadastro:(req,res)=>{
-    res.render('cadastro');
+  logado: (req,res)=>{
+    res.redirect('/servico/cadastro')
   },
-  login: (req,res)=>{
-    res.render('login');
-  }, 
-  contato: (req,res)=>{
-    res.render('contato');
-  }, 
-  sobre: (req,res)=>{
-    res.render('usuario/sobre');
+  cadastro:(req,res)=>{
+    
   }
 };
 

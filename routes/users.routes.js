@@ -1,11 +1,11 @@
 const express = require('express');
-const route = express.Router();
+const router = express.Router();
 
 const usuarioController = require('../controller/usuario.controller');
+// const validator = require('../middleware/auth.middleware');
 
-route.get('/cadastro', usuarioController.cadastro);
-route.get('/login',usuarioController.login);
-route.get('/contato',usuarioController.contato);
-route.get('/sobre',usuarioController.sobre);
 
-module.exports = route;
+router.post('/login',usuarioController.logado)
+router.post('/cadastro' ,usuarioController.cadastro)
+
+module.exports = router;
